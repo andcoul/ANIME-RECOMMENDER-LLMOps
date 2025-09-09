@@ -1,0 +1,4 @@
+amine_recommender.egg-info/
+logs/
+venv/
+.env
