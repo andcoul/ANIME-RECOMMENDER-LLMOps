@@ -4,4 +4,5 @@ from dotenv import load_dotenv
 load_dotenv()
 
 GROQ_API_KEY = os.getenv("GROQ_API_KEY")
-MODEL_NAME = "llama-3.1-8b-instant"
+# Groq retired llama-3.1-8b-instant; this id is on the current model list.
+MODEL_NAME = os.getenv("GROQ_MODEL", "qwen/qwen3.8-27b")
